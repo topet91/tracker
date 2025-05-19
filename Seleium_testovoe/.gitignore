@@ -1,0 +1,15 @@
+# Виртуальная среда
+venv/
+.env/
+
+# Логи
+logs/
+*.log
+
+# Скриншоты и временные файлы
+*.png
+error_screenshot.png
+timeout_error.png
+
+# Скачанные файлы
+downloads/
