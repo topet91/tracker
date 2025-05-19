@@ -16,7 +16,7 @@ logger = setup_logger(__name__,
 class TestScenario1:
     def test_tensor_navigation_and_images(self, driver):
         try:
-            logger.info("Запуск теста сценария 1")
+            logger.info("Запуск теста сценария 1 ")
             # Инициализация страницы Saby
             logger.debug("Инициализация объекта SabyMainPage")
             saby_page = SabyMainPage(driver)

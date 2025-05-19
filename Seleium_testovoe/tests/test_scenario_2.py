@@ -15,7 +15,7 @@ logger = setup_logger(__name__,
 class TestScenario2:
     def test_change_region(self, driver):
         try:
-            logger.info("Запуск теста сценария 2")
+            logger.info("Запуск теста сценария 2 ")
             saby_page = SabyMainPage(driver)
             saby_page.open(BASE_URL)
             saby_page.go_to_contacts()

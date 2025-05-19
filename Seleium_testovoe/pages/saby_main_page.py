@@ -1,4 +1,3 @@
-# pages/saby_main_page.py
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -40,9 +39,9 @@ class SabyMainPage:
         """Открывает выбор региона и выбирает Камчатский край."""
         self.logger.info("Кликаем по текущему региону")
         region = WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(self.region_selector))
-        # Прокручиваем к элементу с учетом возможного фиксированного хедера
+        # Прокручиваем к элементу
         self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", region)
-        # Добавляем дополнительную прокрутку вниз, чтобы избежать перекрытия хедера
+        # Добавляем дополнительную прокрутку вниз, чтобы избежать перекрытия
         self.driver.execute_script("window.scrollBy(0, -100);")
         try:
             region.click()

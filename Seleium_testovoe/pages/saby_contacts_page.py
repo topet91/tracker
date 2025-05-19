@@ -1,4 +1,3 @@
-# pages/saby_contacts_page.py
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -11,7 +10,6 @@ class SabyContactsPage:
         self.logger = setup_logger(__name__,
                                  os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                              "..", "logs", "saby_contacts_page.log"))
-        # Уточненный селектор для баннера Тензор на основе предоставленного HTML
         self.tensor_banner = (By.CSS_SELECTOR, "a.sbisru-Contacts__logo-tensor")
 
     def click_tensor_banner(self):

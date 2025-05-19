@@ -39,7 +39,7 @@ def tab_is_active_or_clickable(driver, xpath, active_class='controls-TabButton__
 class TestScenario3:
     def test_download_plugin(self, driver):
         try:
-            logger.info("Запуск теста сценария 3")
+            logger.info("Запуск теста сценария 3 ")
             saby_page = SabyMainPage(driver)
             saby_page.open(BASE_URL)
             saby_page.go_to_download()
